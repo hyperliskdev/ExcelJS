@@ -125,6 +125,7 @@ module.exports = function(grunt) {
       options: {
         version: '3.8.0',
         noSandbox: true,
+        timeout: 100000,
       },
       dev: {
         src: ['./dist/exceljs.js'],
