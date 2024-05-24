@@ -1,6 +1,6 @@
 {
-  "name": "exceljs",
-  "version": "4.4.0",
+  "name": "@hyperliskdev/exceljs",
+  "version": "0.0.5",
   "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
   "license": "MIT",
@@ -66,8 +66,7 @@
   "lint-staged": {
     "*.js": [
       "prettier-eslint --write",
-      "eslint --format node_modules/eslint-friendly-formatter",
-      "git add"
+      "eslint --format node_modules/eslint-friendly-formatter ./.eslintrc"
     ]
   },
   "keywords": [
