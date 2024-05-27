@@ -5,7 +5,7 @@ const fs = require('fs');
 describe('github issues: Date field with cache style', () => {
   const rows = [];
   beforeEach(
-    () =>
+    async () =>
       new Promise((resolve, reject) => {
         const workbookReader = new ExcelJS.stream.xlsx.WorkbookReader(
           fs.createReadStream('./spec/integration/data/dateIssue.xlsx'),
