@@ -1,4 +1,5 @@
 const ExcelJS = verquire('exceljs');
+const {log} = require('console');
 const fs = require('fs');
 
 describe('github issues: Date field with cache style', () => {
@@ -25,6 +26,7 @@ describe('github issues: Date field with cache style', () => {
       })
   );
   it('issue 1328 - should emit row with Date Object', () => {
+    log(rows);
     expect(rows).that.deep.equals([
       'Date',
       new Date('2020-11-20T00:00:00.000Z'),
