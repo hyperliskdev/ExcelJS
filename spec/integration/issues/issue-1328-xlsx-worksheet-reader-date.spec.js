@@ -1,11 +1,10 @@
 const ExcelJS = verquire('exceljs');
-const {log} = require('console');
 const fs = require('fs');
 
 describe('github issues: Date field with cache style', () => {
   const rows = [];
   beforeEach(
-    async () =>
+    () =>
       new Promise((resolve, reject) => {
         const workbookReader = new ExcelJS.stream.xlsx.WorkbookReader(
           fs.createReadStream('./spec/integration/data/dateIssue.xlsx'),
@@ -26,7 +25,6 @@ describe('github issues: Date field with cache style', () => {
       })
   );
   it('issue 1328 - should emit row with Date Object', () => {
-    log(rows);
     expect(rows).that.deep.equals([
       'Date',
       new Date('2020-11-20T00:00:00.000Z'),
