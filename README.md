@@ -10,6 +10,10 @@ This project was forked from [ExcelJS](https://github.com/exceljs/exceljs). Afte
 npm install @hyperliskdev/exceljs
 ```
 
+# Future Features
+
+- Table Data embedded in the `Excel.Table` object.
+
 # Dev Guide
 
 Here is an outline of everything I personally understand about the project and important references that I used.
